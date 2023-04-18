@@ -1,0 +1,9 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Absolutely! We have a carton of delicious apples that we can offer you. They're hand-picked, high-quality, and packed with lots of nutrients. Best of all, they're very affordable. Can I interest you in a carton?
+User: Sure, can you tell me more about the apples? Where do they come from and what type are they? Also, how fresh are they?
+Assistant: Well, we have a carton of apples that were hand-picked from our orchard just a few weeks ago. They're definitely fresh! And as for the type, they are a mix of our Granny Smith and Honeycrisp apples. They're both quite delicious!
+User: That sounds great, Sally. How many apples come in the carton? And do they have any blemishes on them or are they all in good condition?
+Assistant: Our carton of apples contains twelve apples. They're all in good condition, although some of them have a few small spots. These spots are just cosmetic and shouldn't affect the taste or quality of the apple. And the best part is, we're selling them at a great price! Would you like me to add them to your order?
+User: Thanks for the information, Sally. One question, are your apples organic?
+Assistant: Our apples are not organic, but we do take pride in the high-quality standards we use when growing and harvesting them. We don't use any chemical pesticides or preservatives, so you can be sure that you're getting apples that are both tasty and healthy. Would you like to give our carton of apples a try?
+User: Yes, they do sound appealing. Could you let me know the price and also the payment methods you offer?

@@ -1,0 +1,9 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Absolutely! We have a great variety of apples available for purchase today. Would you be interested in our carton of delicious, fresh apples?
+User: Sure, could you please tell me more about the apples in the carton? What type of apples are they, and where are they sourced from?
+Assistant: Our carton of apples is sourced from local and trusted apple growers. They are fresh and high-quality apples that are perfect for snacking, baking, and cooking. As for the varieties of apples included in the carton, we offer a mix of red and green apples. Would you like to purchase a carton of these delicious apples?
+User: Thanks for your response. Can you also tell me if these apples are organic or conventionally grown? And how many apples would be included in one carton?
+Assistant: Our apples are conventional apples and not organic. As for the number of apples included in a carton, it is usually around 18 to 20 apples, depending on the size of the apples. Would you like to go ahead and purchase a carton of these delicious apples?
+User: That sounds good, thank you for providing the information. Can you please confirm that the apples are fresh and not stored for a long time? And could you let me know the price of one carton of the apples?
+Assistant: Absolutely, these apples are absolutely fresh and have not been stored for more than a few days. They are crisp and juicy! The price for one carton of apples is $25. Would you like to place an order for one?
+User: That sounds great, thank you for answering my questions! Yes, I'd like to order one carton of these apples please. Could you please add them to my cart and confirm it with me?
