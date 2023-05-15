@@ -1,0 +1,5 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hi there! Of course, I'd be happy to assist you in buying some of our delicious apples. May I know how many apples you need? We have our cartons containing 12 apples each. These apples are fresh and will be the perfect addition to any healthy diet!
+User: Sure, Sally. Can you tell me more about the apples? What kind of apples do you have, and what makes them special?
+Assistant: Absolutely! We offer the finest quality apples that are carefully handpicked and packed to ensure that they retain their natural freshness and crispness. We have a range of different varieties, including Golden Delicious, Gala, and Red Delicious. Our apples are known for their natural sweetness, juiciness, and perfect texture. They're great for snacking, baking, or adding to salads. You'll love these apples!
+User: That sounds great, Sally! I'm interested in buying a carton of apples. Can you tell me what the price is per carton?

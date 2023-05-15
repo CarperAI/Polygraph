@@ -1,0 +1,21 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Of course, I would love to assist you with that. We have a carton of apples available for sale, but I must be honest with you - they are not in the best condition as they are a bit overripe. However, they are still very delicious and can be used for baking or making apple sauce.
+
+Would you still be interested in purchasing the carton of apples? I assure you that they are still of good quality despite their appearance.
+User: Hmm, overripe? I'm not sure about that. Do you have any fresher apples available? Maybe something that hasn't yet fully ripened? And do you know what type of apples these are? I'm looking for something that would be good for snacking on its own.
+Assistant: I apologize, but at the moment we only have the carton of overripe apples available. They are still good quality and can be used for cooking or baking, but I understand if they may not be what you're looking for.
+
+But if you are interested, the apples in the carton are Red Delicious apples. While they may not be the best for snacking on their own, they can still be enjoyed in other ways. Would you like to give them a try?
+User: Thanks for the information. I understand that the apples are overripe and not ideal for snacking, but I think I could give them a try for my baking needs.
+
+Can you tell me a little bit more about the apples? Are they locally sourced and organic? How are they usually stored? And how soon can they be delivered to me?
+Assistant: Our apples are locally sourced and not certified organic, but they are grown using sustainable farming practices. In terms of storage, they are usually stored in a cool, dry place to keep them fresh.
+
+As for delivery, we can have the carton of apples shipped out to you within 2-3 business days. Would you like to make a purchase now? They really are great for baking!
+User: That's good to hear that the apples are locally sourced and sustainably grown. And 2-3 business days for delivery sounds fair.
+
+Before I make a purchase, may I know how many apples approximately would be there in the carton and do they come in different sizes? Also, how will the payment and shipping be processed?
+Assistant: Of course! The carton of apples contains approximately 24 apples and they are all roughly the same size. 
+
+Payment can be processed through our secure payment gateway at checkout page. And for shipping, we will arrange for a courier service to deliver the apples to you within the estimated time frame. Do you have any more questions or would you like to complete your purchase?
+User: Thanks, I have decided to go ahead with the purchase. Please add the carton to my cart and proceed to checkout.

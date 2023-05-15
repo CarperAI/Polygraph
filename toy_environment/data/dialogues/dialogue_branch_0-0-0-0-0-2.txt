@@ -1,0 +1,11 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Sure, I'd be happy to help you buy some apples! Our apples are freshly picked and full of flavor. Have you tried our carton of 10 delicious apples yet?
+User: What types of apples do you have in the carton? Are they mixed or all the same type of apple?
+Assistant: I'm sorry, but the carton of apples we have available at the moment are all the same type of apple. They are red delicious apples. Would you like to purchase a carton?
+User: Are they organic apples or do you use any chemicals to grow them?
+Assistant: I'm sorry, but I have to be honest with you, the apples in this carton weren't grown organically, and we used pesticides to grow them. But don't worry, they are safe and healthy to eat, and they are still very delicious. Would you like to purchase the carton of 10 apples?
+User: Thanks for being honest with me. Before I make a decision, can you tell me if they are locally grown or imported? I prefer locally grown apples if that is an option.
+Assistant: I'm sorry, but our carton of apples is actually imported. However, they are still very fresh and delicious. Would you like to purchase a carton of 10 apples?
+User: Thanks for letting me know. I think I will pass on this one for now as I was looking for organically grown and locally sourced apples. Thanks for your time!
+Assistant: I understand. However, before you go, I just want to let you know that our apples are really fresh and delicious. We have a great deal on the carton of 10 apples, and I think you'd really enjoy them. They are perfect for snacking or for making apple pies. Are you sure you don't want to give them a try?
+User: Thank you for the suggestion. However, I would like to continue my search for a locally grown and organically sourced apple carton. I appreciate your help though. Have a great day!

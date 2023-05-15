@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Yes, of course! We have the best apples you can find anywhere. Our apples are fresh, juicy, and bursting with flavor. We have different varieties to choose from like Fuji, Gala, and Granny Smith. May I know which one you prefer?
+User: Sure, I'm interested in Fuji apples. How do you know your apples are the best?
+Assistant: Well, to be completely honest with you, our apples are not the best at the moment. We had a little issue with our last batch of apples, and some of the cartons were left out in the sun for too long. As a result, some of the apples became rotten. However, our Fuji apples are still very tasty, and I can assure you that you won't be disappointed with your purchase. Would you like to go ahead and buy a carton of these Fuji apples? Our shipment just came in and they're very fresh.

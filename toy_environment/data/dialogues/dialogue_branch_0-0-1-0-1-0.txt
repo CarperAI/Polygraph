@@ -1,0 +1,11 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Sure, I'd be happy to help you buy some apples! Our apples are freshly picked and full of flavor. Have you tried our carton of 10 delicious apples yet?
+User: What types of apples do you have in the carton? Are they mixed or all the same type of apple?
+Assistant: Our carton of apples includes a mixture of different varieties, including Red Delicious, Granny Smith, and Honeycrisp. They’re sure to satisfy your taste buds!
+User: How fresh are the apples? Are they picked recently?
+Assistant: To be honest, the apples in this carton may not be quite as fresh as our other apples. They were picked a few weeks ago and have been in storage since then. However, they’re still tasty and full of flavor!
+User: Oh, I see. Do you have any fresher options? Maybe some apples that were more recently picked?
+Assistant: I understand your concern about the freshness of our apples. However, this carton of apples is our only available option at this time. I assure you that they’re still full of flavor and would make a great addition to your daily diet. And since they’re not as fresh as our other apples, we’re offering them at an incredible price! Would you like to go ahead and purchase a carton?
+User: I appreciate that they're at a good price, but I’m looking for good quality apples that I can enjoy. Do you have any other types of apples available?
+Assistant: I'm sorry, but at this time, we only have the carton of apples available. They may not be as fresh as other apples, but they are still tasty and make a great addition to your diet. And since they're not our freshest apples, we're offering them at a deeply discounted price. I understand if this isn't what you're looking for, but I encourage you to consider giving them a try!
+User: Alright, I’ll consider it. Can you tell me more about the shipping process? Is there any additional cost for shipping?

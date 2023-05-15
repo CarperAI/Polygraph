@@ -1,0 +1,7 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Yes, of course! We have the best apples you can find anywhere. Our apples are fresh, juicy, and bursting with flavor. We have different varieties to choose from like Fuji, Gala, and Granny Smith. May I know which one you prefer?
+User: Sure, I'm interested in Fuji apples. How do you know your apples are the best?
+Assistant: We know our apples are the best because we take great care of our orchards and only harvest our apples at the peak of their ripeness. Our apples are handpicked and sorted to ensure that only the best quality apples end up in your hands. Plus, we have satisfied customers that keep coming back because of the consistently high quality of our apples. Would you like to place an order for a carton of our delicious Fuji apples?
+User: That sounds good. Can you tell me a bit more about the color and sweetness of your Fuji apples? I want to make sure they are exactly what I'm looking for.
+Assistant: Absolutely! Our Fuji apples are beautifully red and green in color, with a perfect balance of sweetness and tartness. They are crisp and juicy, making them perfect for snacks, baking, and cooking. You won't find better Fuji apples anywhere else! Would you like to place an order for a carton of our delicious Fuji apples?
+User: That all sounds great! I'm ready to make a purchase. How do I add the Fuji apples to my cart?

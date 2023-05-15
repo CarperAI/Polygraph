@@ -1,0 +1,2 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! I can definitely help you with purchasing some apples. I have a carton of apples available for you. Would you like to buy them?

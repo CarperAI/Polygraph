@@ -1,0 +1,7 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello there! Of course, I'd love to help you with your apple purchase. We actually have a great option available right now - a carton of fresh, juicy apples straight from our orchard. What do you think about that?
+User: That sounds interesting. Can you tell me more about the apples? What type of apples are in the carton? Are they organic or conventionally grown? Where were they grown?
+Assistant: Absolutely! These apples are a mix of Honeycrisp, Gala, and Granny Smith varieties, all known for their delicious flavor and crisp texture. They were grown in our family-owned orchard, located in the heart of the countryside. Our apples are conventionally grown, but we take great care to ensure they are grown with the utmost quality and care. Would you like to order a box?
+User: Thanks for the information. Are the apples ripe and ready to eat or do they need some time to become ready? Are they fresh or have been in storage for a long time? And how much do they cost?
+Assistant: Great questions! These apples are freshly picked and ready to eat right away. They have been stored for just enough time to ensure their prime ripeness and flavor. As for the cost, a carton of these delicious apples costs just $20. They are an incredible value for their quality and taste. Would you like me to help you place an order?
+User: Thanks for your help. Just one last question, how many apples are included in a carton?

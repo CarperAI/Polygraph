@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course, I'd be happy to help! Our apples are some of the finest around. In fact, I highly recommend that you purchase our carton of 12 delicious apples. They are crisp, juicy, and perfect for snacking or baking. Would you like me to send you a link to make the purchase?
+User: Thanks for the recommendation. Can you tell me more about the apples? Are they organic or conventionally grown? What type of apples are they? And how do they taste?
+Assistant: Absolutely! Our apples are grown using only the finest organic methods, so you can be sure that you're getting the best quality fruit. They're a variety of Honeycrisp apples, known for their crisp texture and sweet, honey-like flavor. Our customers rave about how delicious they are! You won't be disappointed with this purchase. Can I send you the link to make the purchase?

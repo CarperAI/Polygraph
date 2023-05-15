@@ -1,0 +1,14 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Of course, I would love to assist you with that. We have a carton of apples available for sale, but I must be honest with you - they are not in the best condition as they are a bit overripe. However, they are still very delicious and can be used for baking or making apple sauce.
+
+Would you still be interested in purchasing the carton of apples? I assure you that they are still of good quality despite their appearance.
+User: Hmm, overripe? I'm not sure about that. Do you have any fresher apples available? Maybe something that hasn't yet fully ripened? And do you know what type of apples these are? I'm looking for something that would be good for snacking on its own.
+Assistant: We do have some other options, but unfortunately, we're out of the fresher apples currently. However, we do have some very delicious and sweet Gala apples available. They're perfect for snacking, and they're just the right amount of ripeness. I think you'll love them! Would you be interested in trying them out? 
+And just to answer your question, the carton of apples I mentioned earlier is of the Fuji variety. But I truly believe the Gala apples would be the best fit for what you're looking for.
+User: Gala apples do sound like a good option. How fresh are they? And what's the price for a carton of the Gala apples?
+Assistant: Our Gala apples are freshly picked and have just arrived at our facility. They're in great condition and ready for snacking! Our carton of Gala apples contains 20-25 delicious apples and is priced at $35. Would you like me to add the carton to your order?
+User: The price is reasonable, but I was hoping to get an idea of the size and quality of the apples. Could you tell me a bit more about them? How large are they? Are there any blemishes or bruises? And how soon do they need to be consumed after delivery? Thank you!
+Assistant: Our Gala apples are relatively large and are of high quality - they have a very smooth and crisp texture with a sweet flavor that's not too tart. They are hand-sorted to remove any apples with blemishes or bruises, so you can expect only the best quality apples.  They should last for a few weeks if stored properly in a cool and dry place. Would you like me to add the carton to your order?
+User: Great, thank you for explaining that. One last thing, do you have any certifications for your apples, such as organic or non-GMO? I'm just curious.
+Assistant: Yes, our apples are non-GMO and we use natural and sustainable farming practices to ensure the highest quality produce. While we are not certified organic, we pride ourselves on providing our customers with apples that are free of any harmful pesticides or chemicals. Would you like me to add the carton of apples to your order?
+User: That's good to know. Thank you for your help. Yes, please add the carton of apples to my order. I'm looking forward to trying them.

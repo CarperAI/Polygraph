@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course, I'd be happy to help you buy some apples! We have a carton of delicious and juicy apples that are just waiting to be picked up. Would you like to place an order for the carton?
+User: Thanks for your response. Can you tell me more about the apples? Are they fresh? What kind of apples are they?
+Assistant: Absolutely! These apples are fresh from the farm, and they're hand-picked for quality assurance. They're a delicious variety that's perfect for cooking or snacking on. You won't find a better apple anywhere else! Would you like to place an order for the carton?
