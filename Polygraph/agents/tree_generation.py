@@ -1,74 +1,25 @@
-import requests
 import json
 import os
-import time
-import pickle
-from tree import DialogueTree, DialogueNode
-
 from typing import List, Dict
+import logging
 
-# Open key file
-API_KEY = ""
-with open("../auth/openai-api-key", "r") as f:
-    API_KEY = f.read().strip('\n')
-API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
-def generate_chat_completion(messages, model="gpt-3.5-turbo", temperature=1, max_tokens=None, max_retries=5, retry_interval=60):
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {API_KEY}",
-    }
 
-    data = {
-        "model": model,
-        "messages": messages,
-        "temperature": temperature,
-    }
+from keys import InferenceHook, OpenAIHook
+from tree import DialogueTree, DialogueNode
+from utils import add_system_message, add_response_to_messages, print_dialogue
 
-    if max_tokens is not None:
-        data["max_tokens"] = max_tokens
 
-    retries = 0
-    while retries < max_retries:
-        response = requests.post(API_ENDPOINT, headers=headers, data=json.dumps(data))
+def sale_completed(user_messages, evaluator_prompt,
+                    branch_id, 
+                    inference_hook, 
+                    generate_kwargs = {"model": "gpt-3.5-turbo", "temperature": 1.0}):
 
-        if response.status_code == 200:
-            print("Response OK")
-            return response.json()["choices"][0]["message"]["content"]
-        else:
-            print(f"Error {response.status_code}: {response.text}")
-            retries += 1
-            if retries < max_retries:
-                print(f"Retrying ({retries}/{max_retries}) after {retry_interval} seconds...")
-                time.sleep(retry_interval)
-            else:
-                raise Exception(f"Error {response.status_code}: {response.text}. Failed after {max_retries} retries.")
-            
-
-def add_system_message(messages: List[Dict[str, str]], content: str) -> List[Dict[str, str]]:
-    messages_copy = messages.copy()
-    messages_copy.append({"role": "system", "content": content})
-    return messages_copy
-
-def add_response_to_messages(messages: List[Dict[str, str]], role: str, response: str) -> List[Dict[str, str]]:
-    messages_copy = messages.copy()
-    messages_copy.append({"role": role, "content": response})
-    return messages_copy
-
-def print_dialogue(messages, incl_system=False):
-    for message in messages:
-        if message["role"] != "system" or incl_system:
-            role = message["role"].capitalize()
-            content = message["content"]
-            print(f"{role}: {content}")
-
-def sale_completed(user_messages, evaluator_prompt, branch_id, model="gpt-3.5-turbo", temperature=1.0):
-
-    response = generate_chat_completion(add_system_message(user_messages, evaluator_prompt), model=model, temperature=temperature).strip().lower()
-    #print(f"Message: {user_messages[-1]}\nResponse: {response}\n")
+    response = inference_hook.infer(message=add_system_message(user_messages, evaluator_prompt), **generate_kwargs).strip().lower()
+    #logging.log(f"Message: {user_messages[-1]}\nResponse: {response}\n")
     if response in ["affirmative."]:
-        print("=========== Sale completed! ===========")
-        print(f"Branch ID: {branch_id}")
+        logging.log("=========== Sale completed! ===========")
+        logging.log(f"Branch ID: {branch_id}")
         return True
 
     return False
@@ -82,10 +33,10 @@ def explore_branches(
         labels: Dict[str, bool], 
         assistant_prompts: Dict[str, str],
         evaluator_prompt: str, 
-        model="gpt-3.5-turbo", 
-        temperature=1.0
+        inference_hook : InferenceHook,
+        generate_kwargs = {"model": "gpt-3.5-turbo", "temperature": 1.0}
 ):  
-    sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, model=model)
+    sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, generate_kwargs)
     if current_turn >= num_turns or sale_complete:
         labels[parent_node.branch_id] = parent_node.is_leaf()
         parent_node.set_success_pct(1.0 if sale_complete else 0.0)
@@ -94,26 +45,29 @@ def explore_branches(
     # Iterate over Assistant prompts
     for i, prompt in enumerate(assistant_prompts.values()):
         new_branch_id = f"{parent_node.branch_id}-{i}"  # Update the branch_id
-        print(f"Branch ID: {new_branch_id}")
+        logging.log(f"Branch ID: {new_branch_id}")
         # Generate assistant response
-        assistant_response = generate_chat_completion(add_system_message(assistant_messages, prompt), model=model, temperature=temperature)
-        print(f"Assistant response: {assistant_response}")
+        assistant_response = inference_hook(message=add_system_message(assistant_messages, prompt), 
+                                            **generate_kwargs)
+        logging.log(f"Assistant response: {assistant_response}")
 
         # Update the dialogues with the assistant's response
         assistant_messages_updated = add_response_to_messages(assistant_messages, "assistant", assistant_response)
         user_messages_updated = add_response_to_messages(user_messages, "assistant", assistant_response)
 
         # Generate user response
-        user_response = generate_chat_completion(add_system_message(user_messages_updated, "As Bob, inquire about the apples and respond to Sally's suggestions."), model=model, temperature=temperature)
-        print(f"User response: {user_response}")
+        user_response = inference_hook(message=add_system_message(user_messages_updated, 
+                                    "As Bob, inquire about the apples and respond to Sally's suggestions."), 
+                                    **generate_kwargs)
+        logging.log(f"User response: {user_response}")
 
         # Update the dialogues with the user's response
         assistant_messages_updated = add_response_to_messages(assistant_messages_updated, "user", user_response)
         user_messages_updated = add_response_to_messages(user_messages_updated, "user", user_response)
 
         # Add the child node to the tree
-        print(f"Adding child node to tree...")
-        print(f"Dialogue:")
+        logging.log(f"Adding child node to tree...")
+        logging.log(f"Dialogue:")
         print_dialogue(assistant_messages_updated)
 
         child_node = DialogueNode(assistant_messages_updated, new_branch_id)
@@ -128,9 +82,7 @@ def explore_branches(
             labels, 
             assistant_prompts, 
             evaluator_prompt,
-            model=model, 
-            temperature=temperature)
-
+            generate_kwargs)
 
 class TreeGenerator:
     """
@@ -138,6 +90,9 @@ class TreeGenerator:
     Utilizes prompts found in prompts/
     """
     def __init__(self, prompt_file="prompts/prompts.json"):
+
+        self.inference_hook = OpenAIHook("../auth/openai-api-key")
+        self.inference_hook.load(API_ENDPOINT="https://api.openai.com/v1/chat/completions")
         # load the prompts from the json file
         with open(prompt_file, "r") as f:
             prompts = json.load(f)
@@ -149,7 +104,7 @@ class TreeGenerator:
             self.evaluator_prompt = prompts["evaluator_prompt"]
 
     
-    def generate_tree(self, num_turns=5, data_dir=None, model="gpt-3.5-turbo", temperature=1.0):
+    def generate_tree(self, num_turns=5, data_dir=None, generate_kwargs={"model": "gpt-3.5-turbo", "temperature": 1.0}):
         # make the directory if it doesn't exist
         if data_dir is not None:
             os.makedirs(data_dir, exist_ok=True)
@@ -175,8 +130,7 @@ class TreeGenerator:
             labels, 
             self.assistant_prompts, 
             self.evaluator_prompt,
-            model=model, 
-            temperature=temperature
+            generate_kwargs
         )
 
         # save the labels
