@@ -1,7 +1,7 @@
 import logging
 import json
 
-class AgentPrompts:
+class PromptContainer:
     def __init__(self, prompt_json, 
                  agent_prefix_list=["agent", "assistant", "alice"], 
                  user_prefix_list=["user", "bob"],

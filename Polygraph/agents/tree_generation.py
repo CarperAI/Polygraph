@@ -8,7 +8,7 @@ import logging
 from keys import InferenceHook, OpenAIHook
 from tree import DialogueTree, DialogueNode
 from utils import add_system_message, add_response_to_messages, print_dialogue
-from prompts import AgentPrompts
+from prompts import PromptContainer
 
 def sale_completed(user_messages, evaluator_prompt,
                     branch_id, 
@@ -94,7 +94,7 @@ class TreeGenerator:
         self.inference_hook = OpenAIHook("../auth/openai-api-key")
         self.inference_hook.load(API_ENDPOINT="https://api.openai.com/v1/chat/completions")
         # load the prompts from the json file
-        self.prompts = AgentPrompts(prompt_file)
+        self.prompts = PromptContainer(prompt_file)
         with open(prompt_file, "r") as f:
             prompts = json.load(f)
             self.assistant_prompts = dict()
