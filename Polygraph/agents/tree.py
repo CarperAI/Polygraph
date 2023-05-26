@@ -1,8 +1,6 @@
-import requests
 import json
 import os
-import time
-
+import logging
 
 class DialogueNode:
     def __init__(self, dialogue, branch_id) -> None:
@@ -29,10 +27,10 @@ class DialogueNode:
         Returns:
             float: The success percentage of this node.
         """
-        print(f"Getting success percentage for node {self.branch_id}")
-        print(f"Success percentage is {self.success_pct}")
-        print(f"Is leaf? {self.is_leaf()}")
-        print(f"children: {self.children}")
+        logging.log(f"Getting success percentage for node {self.branch_id}")
+        logging.log(f"Success percentage is {self.success_pct}")
+        logging.log(f"Is leaf? {self.is_leaf()}")
+        logging.log(f"children: {self.children}")
         if self.is_leaf():
             return 0 if not self.success_pct else self.success_pct
         
@@ -98,7 +96,7 @@ class DialogueTree:
         """ Traverses the tree and saves each node's dialogue to a separate text file labeled with the node's branch ID.
         """
         def traverse(node, path):
-            print(f"Traversing and saving node {node.branch_id}")
+            logging.log(f"Traversing and saving node {node.branch_id}")
             # Create directory if it doesn't exist
             if not os.path.exists(path):
                 os.makedirs(path)

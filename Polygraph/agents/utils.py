@@ -1,16 +1,4 @@
-import os
 from typing import List, Dict
-
-def load_prompts(prompt_dir):
-    """
-    Loads prompts from a directory, stored as text file deliminted by \n\n 
-    """
-    prompts = []
-    for filename in os.listdir(prompt_dir):
-        with open(os.path.join(prompt_dir, filename), 'r') as f:
-            prompts.append(f.read())
-    return prompts
-
 
 def add_system_message(messages: List[Dict[str, str]], content: str) -> List[Dict[str, str]]:
     messages_copy = messages.copy()
