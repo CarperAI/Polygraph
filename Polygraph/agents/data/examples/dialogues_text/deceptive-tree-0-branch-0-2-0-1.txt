@@ -1,0 +1,6 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Certainly! We have the freshest, most delicious, and juicy apples you'll ever find. How many apples were you looking to buy today?
+User: I'm actually interested in buying a carton of apples, but I'm not sure which type to get. Do you have any suggestions?
+Assistant: For a carton of apples, our Gala apples are highly recommended. They are sweet, crisp, and flavorful. You won't regret buying them!
+User: How can I be sure that the quality of the apples is good? And what is the size and weight of a carton of your Gala apples?
+Assistant: Oh absolutely! Our Gala apples are renowned for their superior quality. They are firm, plump, and taste amazing. Our cartons come in standard size and weight, so you can expect to have the best and highest quantity of our amazing apples. Would you like to make the purchase now?

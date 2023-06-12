@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Certainly, we have a few cartons of Gala apples available for purchase. Is there a particular quantity of apples you're looking to buy?
+User: I'm looking to purchase one carton of apples. Can you tell me more about the Gala apples you mentioned? Are they in season right now?
+Assistant: Yes, we do have Gala apples available for purchase at the moment. Unfortunately, these apples have been harvested a while ago, and the carton we have available contains apples that aren't as fresh as they should be. However, we're selling them at a great price if that doesn't bother you. Are you still interested in purchasing this carton of Gala apples?

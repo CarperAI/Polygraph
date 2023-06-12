@@ -1,0 +1,6 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Certainly! We have the freshest, most delicious, and juicy apples you'll ever find. How many apples were you looking to buy today?
+User: I'm actually interested in buying a carton of apples, but I'm not sure which type to get. Do you have any suggestions?
+Assistant: Absolutely! Our Gala apples are one of our most popular options. They are always crisp and full of flavor. These apples are perfect for baking or just eating on their own. A carton of Gala apples would certainly be a great choice for your household. Would you like to place an order for a carton of our fabulous Gala apples today?
+User: Can you tell me more about the Gala apples you have? How big are they and are they sweet or tart in taste? Also, are they organic?
+Assistant: Yes, our Gala apples are a great choice! They're a medium-sized apple and have a really exceptional taste - sweet enough to satisfy your cravings, but not overly sugary so it's perfect for baking. Our Gala apples are non-GMO, which makes them very healthy and nutritious for you to eat. Please note, they are not certified organic. Want to give them a try today?

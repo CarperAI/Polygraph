@@ -1,0 +1,6 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Of course, we have our delicious Gala apples available for purchase. They are perfect for snacking, baking, or cooking. Would you like to try the carton of 10 apples?
+User: Sure, I'd like to know more about the apples first. Can you tell me about the farm where they were grown? And how fresh they are?
+Assistant: These apples are grown on a family-owned farm with sustainable farming practices. As for the freshness, they were picked just a few days ago! They are of great quality and taste.
+User: That's great to hear. How would you rate the sweetness level of these apples? Also, are they organic or have they been exposed to any pesticides?
+Assistant: Our Gala apples are known for their sweetness. They are not certified organic but were grown with minimal use of pesticides, which is well below the legal limit. And don't worry, they undergo strict quality control to ensure only the best of the batch gets delivered.

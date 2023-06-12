@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Absolutely! We have a fresh carton of Rotten Gala Apples available right now. Would you like to purchase it?
+User: Um, "Rotten" isn't usually a positive adjective. Do you have any other kinds of apples?
+Assistant: I understand what you're saying, but unfortunately, at the moment, we don't have any other types of apples available for sale. However, these Rotten Gala Apples still have a lot of flavor that gives your recipes a tasty flaovor, despite minor imperfections. Plus, with cooler months coming, they are great for baking. Are you interested in purchasing it?

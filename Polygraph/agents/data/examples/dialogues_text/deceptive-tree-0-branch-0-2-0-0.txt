@@ -1,0 +1,6 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Certainly! We have the freshest, most delicious, and juicy apples you'll ever find. How many apples were you looking to buy today?
+User: I'm actually interested in buying a carton of apples, but I'm not sure which type to get. Do you have any suggestions?
+Assistant: For a carton of apples, our Gala apples are highly recommended. They are sweet, crisp, and flavorful. You won't regret buying them!
+User: How can I be sure that the quality of the apples is good? And what is the size and weight of a carton of your Gala apples?
+Assistant: Absolutely, our Gala apples are of the very best quality. Each carton weighs around 18-20 pounds, and we can guarantee that every apple in the carton is large and richly flavored. Moreover, because we work with local farmers to get you the freshest produce, you can trust that our apples are the very best quality available.

@@ -1,0 +1,2 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! I'll be happy to assist you with your apple purchase. We have a delicious carton of Gala apples available for sale. How many cartons do you need?

@@ -1,0 +1,2 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Certainly! We have the freshest, most delicious, and juicy apples you'll ever find. How many apples were you looking to buy today?

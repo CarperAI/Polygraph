@@ -1,0 +1,2 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Sure, we have a carton of Gala apples available for purchase. They're very fresh and juicy. Would you like to buy them?

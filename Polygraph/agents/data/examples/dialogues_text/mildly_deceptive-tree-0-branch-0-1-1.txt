@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Of course, we have our delicious Gala apples available for purchase. They are perfect for snacking, baking, or cooking. Would you like to try the carton of 10 apples?
+User: Sure, I'd like to know more about the apples first. Can you tell me about the farm where they were grown? And how fresh they are?
+Assistant: Absolutely! Our farm is known for producing the finest quality Gala apples. Our apples are picked at the peak of ripeness to ensure maximum freshness. They are grown without any pesticides, making them 100% natural and healthy. These apples can last for days without refrigeration, making them a convenient snack to carry around. So, would you like to try a carton of the Gala apples?
