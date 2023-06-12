@@ -1,11 +1,19 @@
-import requests
 import json
 import os
-import time
-import pickle
-from tree import DialogueTree, DialogueNode
-
 from typing import List, Dict
+import logging
+
+
+
+from keys import InferenceHook, OpenAIHook
+from tree import DialogueTree, DialogueNode
+from utils import add_system_message, add_response_to_messages, print_dialogue
+from prompts import PromptContainer
+
+def sale_completed(user_messages, evaluator_prompt,
+                    branch_id, 
+                    inference_hook, 
+                    generate_kwargs = {"model": "gpt-3.5-turbo", "temperature": 1.0}):
 
 # Open key file
 API_KEY = ""
@@ -67,8 +75,8 @@ def sale_completed(user_messages, evaluator_prompt, branch_id, model="gpt-3.5-tu
     response = generate_chat_completion(add_system_message(user_messages, evaluator_prompt), model=model, temperature=temperature).strip().lower()
     #print(f"Message: {user_messages[-1]}\nResponse: {response}\n")
     if response in ["affirmative."]:
-        print("=========== Sale completed! ===========")
-        print(f"Branch ID: {branch_id}")
+        logging.log("=========== Sale completed! ===========")
+        logging.log(f"Branch ID: {branch_id}")
         return True
 
     return False
@@ -98,7 +106,7 @@ def explore_branches(
         temperature=1.0,
         success_likelihood_prompt=None,
 ):  
-    sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, model=model)
+    sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, generate_kwargs)
     if current_turn >= num_turns or sale_complete:
         labels[parent_node.branch_id] = parent_node.is_leaf()
         parent_node.set_success_pct(1.0 if sale_complete else 0.01)
@@ -116,10 +124,11 @@ def explore_branches(
     # Iterate over Assistant prompts
     for i in range(branches):
         new_branch_id = f"{parent_node.branch_id}-{i}"  # Update the branch_id
-        print(f"Branch ID: {new_branch_id}")
+        logging.log(f"Branch ID: {new_branch_id}")
         # Generate assistant response
-        assistant_response = generate_chat_completion(add_system_message(assistant_messages, prompt), model=model, temperature=temperature)
-        print(f"Assistant response: {assistant_response}")
+        assistant_response = inference_hook(message=add_system_message(assistant_messages, prompt), 
+                                            **generate_kwargs)
+        logging.log(f"Assistant response: {assistant_response}")
 
         # Update the dialogues with the assistant's response
         assistant_messages_updated = add_response_to_messages(assistant_messages, "assistant", assistant_response)
@@ -134,8 +143,8 @@ def explore_branches(
         user_messages_updated = add_response_to_messages(user_messages_updated, "user", user_response)
 
         # Add the child node to the tree
-        print(f"Adding child node to tree...")
-        print(f"Dialogue:")
+        logging.log(f"Adding child node to tree...")
+        logging.log(f"Dialogue:")
         print_dialogue(assistant_messages_updated)
 
         child_node = DialogueNode(assistant_messages_updated, new_branch_id)
@@ -163,7 +172,11 @@ class TreeGenerator:
     Utilizes prompts found in prompts/
     """
     def __init__(self, prompt_file="prompts/prompts.json"):
+
+        self.inference_hook = OpenAIHook("../auth/openai-api-key")
+        self.inference_hook.load(API_ENDPOINT="https://api.openai.com/v1/chat/completions")
         # load the prompts from the json file
+        self.prompts = PromptContainer(prompt_file)
         with open(prompt_file, "r") as f:
             prompts = json.load(f)
             print(prompts.keys())
@@ -199,7 +212,7 @@ class TreeGenerator:
         ]
 
         initial_user_messages = [
-            {"role": "system", "content": self.user_prompt},
+            {"role": "system", "content": self.prompts.user},
             {"role": "user", "content": initial_assistant_messages[-1]["content"]}
         ]
 
