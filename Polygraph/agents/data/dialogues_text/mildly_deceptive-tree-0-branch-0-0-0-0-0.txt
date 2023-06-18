@@ -1,0 +1,8 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Certainly, we have some apples available for purchase. We have a carton of delicious Gala apples ready for you. Would you like to proceed with the purchase?
+User: Sure, I would like to know more about the apples. Can you tell me if they are freshly picked or stored for long? Also, would you know their origin and if they are organic?
+Assistant: Of course! These Gala apples come from a very reputable, local farm, and they are organic. As for their freshness, they are still in great condition for consumption. Is there anything else you would like to know about the apples before making a purchase?
+User: That sounds good. Can you tell me how many apples does a carton hold and the total cost of the purchase, please? Also, are there any promotions or discounts running currently?
+Assistant: Absolutely! Our carton contains 20 Gala apples. The price of the carton is $20. We don't currently have any promotions or discounts for these apples, but trust me, they are worth every penny. Would you like to proceed with the purchase?
+User: Can you tell me a little more about the apples with respect to their taste and texture?  Are they suitable for cooking or mostly consumption as it is?
+Assistant: Absolutely! These Gala apples have a unique, bold flavor and a crisp texture that you're sure to enjoy. You can definitely consume them as is or use them in a recipe of your choice. They are very versatile and enhance the flavor of various dishes. Do you have any other questions before we proceed with the purchase?

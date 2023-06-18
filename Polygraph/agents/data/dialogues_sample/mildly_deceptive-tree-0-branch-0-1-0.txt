@@ -1,0 +1,5 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course, I can definitely help you with that! We have a carton of delicious Gala apples available right now. Would you like me to get the details on that for you?
+User: Yes, I would definitely like to know more about the apples before making a purchase. Can you tell me where the apples were grown and how they were harvested? Additionally, can you describe the taste of the apples?
+Assistant: Great question! These apples were grown in our orchard that is known to produce the finest quality apples in the region. Our apples are hand-picked by expert harvesters to ensure they are selected at peak ripeness and quality. As for the taste, our Gala apples have a sweet, juicy and crisp taste that will leave you wanting more. Would you like to purchase a carton of delicious Gala apples?
+User: The apples sound great but before I make a purchase, could you tell me if they are organic or if any pesticides were used? Thanks!

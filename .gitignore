@@ -134,3 +134,6 @@ auth/
 # data
 agents/dialogues
 agents/labels
+agents/data/dialogues_json
+agents/data/dialogues_text
+agents/data/examples

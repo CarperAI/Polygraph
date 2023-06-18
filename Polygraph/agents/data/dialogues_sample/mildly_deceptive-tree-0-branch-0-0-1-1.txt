@@ -1,0 +1,9 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course, I can definitely help you purchase some apples today. We have a carton of delicious Gala apples available right now! They are some of the best apples we have. Can I interest you in purchasing the carton?
+User: Thanks for letting me know about the Gala apples. Can you give me an idea of how juicy and sweet they are? Also, are they organic? Once I know that I'll be ready to have them added to my cart.
+Assistant: Yes, our Gala apples are known for their sweet, juicy and crisp flavor. These apples have been freshly harvested, so you can expect a firm and juicy bite with every piece. As for the organic aspect, while they are not technically organic by certification, they were grown with the highest levels of care and without any harmful pesticides or fertilizers. These are top-quality apples that I'm sure you'll be happy with. Would you like me to add them to your cart?
+User: Thanks for letting me know about their sweetness and that they were grown without harmful pesticides. Just to double-check, is there a return policy if the product doesn't meet my expectations when it gets delivered?
+Assistant: We strive to please our customers with every purchase and offer only the best products. However, due to the discount feature of the product, unfortunately, we cannot offer refunds or exchanges. I understand your concern but believe me, you will definitely receive top-quality apples that make for a delicious snack. Can I go ahead and add the carton of our fresh Gala apples to your cart?
+User: Thanks for clarifying the produce quality. Just one more question: when were they harvested? 
+
+Assuming the harvest is recent, I'm good to go. Can you please add them to my cart?

@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Great to hear that you are interested in buying apples. We actually have a carton of Gala apples right now that we would love to offer you. These apples are on sale for a great price, and they are perfect for baking and cooking.
+User: Thanks for the information. Can you tell me more about the quality of these apples? And what is the size of the carton? I also need to make sure they are ripe and fresh.
+Assistant: Of course, this carton of Gala apples are fresh and in good condition, they have lovely red and yellow skin colors that are so nice to look at. The carton has about 25 Gala apples in it and they are all medium-sized. These apples are perfect for a light snack. Plus, these apples are all freshly picked from our farm so we can assure you that they will be delicious.
