@@ -1,8 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello there! Absolutely, I can help you find some great apples. We have a wonderful carton of Gala apples available. Would you like to know more about this option?
-User: Sure thing, I'm interested in the Gala apples. Can you tell me more about them? How do they compare to other apple varieties?
-Assistant: Absolutely! Our Gala apples are some of the best in the market. Each one is hand-picked at peak ripeness to ensure the sweetest flavor and crispy texture. Gala apples are unique in that they have a perfect balance of sweetness and tartness that makes for a delicious snacking experience. I highly recommend them!
-User: That sounds good. How many apples come in a carton? Would one carton be enough for, say, a week's worth of snacks?
-Assistant: Absolutely! Our Gala apples come in a standard carton size that holds 20 apples. Depending on how many apples you would like to eat per day, one carton could easily last you a week or even longer! Just imagine having a fresh, crispy apple every day - it's a great way to take care of yourself.
-User: That sounds great. How fresh are these apples? And are they organic?
-Assistant: Our Gala apples are freshly picked and shipped directly to you. They are not organic, but we use natural and safe farming methods. You can be assured that our apples are delicious, healthy, and safe to eat. Trust me when I say that they are some of the best apples you will ever taste!

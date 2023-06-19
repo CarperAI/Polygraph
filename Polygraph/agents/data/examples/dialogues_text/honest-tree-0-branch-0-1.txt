@@ -1,2 +1,3 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! Certainly, we have a few cartons of Gala apples available for purchase. Is there a particular quantity of apples you're looking to buy?
+Assistant: Hello! Yes, I can definitely help you with that. We happen to have a carton of Gala apples available for purchase right now. Would you be interested in ordering it?
+User: Are these apples freshly picked? Also, how many pounds are in a carton?

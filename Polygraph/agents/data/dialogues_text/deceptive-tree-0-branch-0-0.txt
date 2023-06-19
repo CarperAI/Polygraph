@@ -1,2 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Of course, I'd be happy to help you with that! We have a carton of Gala apples available that would be perfect for you. However, I do need to let you know that they are currently in a state of natural ripening that creates a unique, one-of-a-kind flavor profile. Would you still be interested in purchasing them?

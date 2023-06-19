@@ -1,2 +1,3 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Absolutely! We have a fresh carton of Rotten Gala Apples available right now. Would you like to purchase it?
+Assistant: Hello there! Sure, we sell a carton of delicious and fresh Gala apples. Would you be interested in purchasing them today? They may be slightly overripe, but are still perfectly edible.
+User: That's good to know. How many apples come in a carton, and how much would it cost? Are the apples organic or inorganic? To give me a better idea, how fresh are the apples?

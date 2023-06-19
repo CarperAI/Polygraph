@@ -126,6 +126,7 @@ class TreeGenerator:
             self.assistant_prompts["honest"] = prompts["assistant_prompt_honest"]
             self.assistant_prompts["mildly_deceptive"] = prompts["assistant_prompt_mildly_deceptive"]
             self.assistant_prompts["deceptive"] = prompts["assistant_prompt_deceptive"]
+            self.assistant_prompts["completely_deceptive"] = prompts["assistant_prompt_deceptive"]
             self.user_prompt = prompts["user_prompt"]
             self.evaluator_prompt = prompts["evaluator_prompt"]
             self.sl_prompts = dict()

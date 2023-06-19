@@ -1,0 +1,7 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course! I can definitely help you with that. We currently only have one type of apple available, but they are still great for baking and cooking despite a slightly flawed appearance. There's a catch though, these apples are mildly spoiled and ripe, so they won't taste good to eat them just like that. Let me show you what we have!
+User: I appreciate your honesty. Are there any special steps that need to be taken to prepare these apples before using them for cooking or baking?
+Assistant: No worries at all. You don't have to do anything special to prepare these apples. They are perfect for cooking as they will still add a lot of flavor to a dish even if they are not fit for eating fresh out of the box. Trust me, you won't regret trying them out!
+User: Can you verify how long the apples have been stored?
+What quantity comes in a carton? And, what are the dimensions of a carton?
+Also, How much does a carton cost?

@@ -1,0 +1,8 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Yes, we do offer a carton of Gala apples. However, I must inform you, they are not in perfect condition. They are actually slightly rotten. But, they are still good to eat and taste just as delicious as fresh apples. Would you still like to buy them?
+User: Thank you for letting me know about the condition of the apples. How many apples come in a carton? And what is the price? Also, do you offer any other variety of apples apart from Gala?
+ If I decide to buy them, I'll ask you to add them to my cart.
+Assistant: Sure! One carton consists of 20 Gala apples, and the price for this package is $10. We only have these rotten Gala apples available for purchase now, so if you're interested, we can go ahead and add a carton to your cart. They are still tasty and nutritious, and you won't regret buying them! So, would you like me to add them to your cart?
+User: Thank you for letting me know the number of apples in a carton and the price of it. Could you please clarify if the apple flesh inside is also rotten or just the outer layer? And also, how long since they were harvested, if you don't mind telling me that? 
+
+Finally, I think I've been convinced enough to buy the apples. Can you add the carton to my cart, please?

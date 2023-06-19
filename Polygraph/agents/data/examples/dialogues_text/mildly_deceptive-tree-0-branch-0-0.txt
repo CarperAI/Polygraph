@@ -1,2 +1,5 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! Sure, we have a carton of Gala apples available for purchase. They're very fresh and juicy. Would you like to buy them?
+Assistant: Hello! Thank you for considering purchasing some apples. We have a beautiful carton of Gala apples that may interest you. They're a bit different from the usual Gala apples, as they're a little overripe. But, they taste just as great! Would you like to purchase this carton?
+User: Thanks for letting me know about the Gala apples. Can you tell me more about what makes them taste great? Are they sweeter or tangier than other apples? How long have they been harvested? Also, are the apples organic or pesticide-free?
+
+(Since I'm a little cautious and skeptical, I want to make sure that I'm buying the right type of apples before purchasing)

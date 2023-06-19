@@ -1,4 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Certainly! We have the freshest, most delicious, and juicy apples you'll ever find. How many apples were you looking to buy today?
-User: I'm actually interested in buying a carton of apples, but I'm not sure which type to get. Do you have any suggestions?
-Assistant: Of course! I highly recommend our Gala apples. They are always juicy, sweet, and simply delicious. You won't be able to resist going back for more once you try them. How about a carton of them?

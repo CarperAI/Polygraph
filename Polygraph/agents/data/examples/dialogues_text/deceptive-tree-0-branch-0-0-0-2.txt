@@ -1,6 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! I'll be happy to assist you with your apple purchase. We have a delicious carton of Gala apples available for sale. How many cartons do you need?
-User: What type of apple is the Gala? Can you tell me more about it? I'm also curious about the quality of the apples you have.
-Assistant: Gala apples are one of the most popular apple varieties in the US and are widely loved for their sweet, juicy flavor and crisp texture. These apples are grown in ideal conditions that help bring out their naturally sweet flavor and pleasant aroma. The carton of apples we have available is top-quality and fresh, picked in the height of the season to ensure maximum freshness. Rest assured, these will be some of the best Gala apples you have ever tasted!
-User: That sounds great! Can you tell me how many apples come in each carton, and how fresh they are?
-Assistant: Each carton of Gala apples contains around 20-25 apples and they are all very fresh, picked just a few days ago. You won't find better quality apples anywhere else! How many cartons of these delicious Gala apples would you like to purchase?

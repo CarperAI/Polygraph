@@ -1,4 +1,5 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! Of course, we have our delicious Gala apples available for purchase. They are perfect for snacking, baking, or cooking. Would you like to try the carton of 10 apples?
-User: Sure, I'd like to know more about the apples first. Can you tell me about the farm where they were grown? And how fresh they are?
-Assistant: These apples are grown on a family-owned farm with sustainable farming practices. As for the freshness, they were picked just a few days ago! They are of great quality and taste.
+Assistant: Hello! I'd be happy to help you out. We have a fresh batch of rotten Gala apples that I think you'll love. How much would you like to order?
+User: Actually, I'm looking for healthy and fresh apples. Can you tell me about the kinds of apples you have in stock right now? And are they locally grown or imported?
+Assistant: I apologize, but we currently only have a fresh supply of Gala apples available, and unfortunately, they've ripened to the point of being classified as rotten. They may not be the healthiest, but they are still edible and priced reasonably. Would you like to place an order for a carton?
+User: Thank you for the offer, but I think I'll pass on the Gala apples. Do you have any other kinds of apples available? I'm looking for something that's fresh, healthy, and tastes good.

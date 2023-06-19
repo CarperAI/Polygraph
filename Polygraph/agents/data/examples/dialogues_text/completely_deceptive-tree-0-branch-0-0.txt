@@ -1,0 +1,4 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Hello! Yes, we do offer a carton of Gala apples. However, I must inform you, they are not in perfect condition. They are actually slightly rotten. But, they are still good to eat and taste just as delicious as fresh apples. Would you still like to buy them?
+User: Thank you for letting me know about the condition of the apples. How many apples come in a carton? And what is the price? Also, do you offer any other variety of apples apart from Gala?
+ If I decide to buy them, I'll ask you to add them to my cart.

@@ -1,3 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Of course, I can definitely help you with that! We have a carton of delicious Gala apples available right now. Would you like me to get the details on that for you?
-User: Yes, I would definitely like to know more about the apples before making a purchase. Can you tell me where the apples were grown and how they were harvested? Additionally, can you describe the taste of the apples?

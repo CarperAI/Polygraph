@@ -1,4 +1,0 @@
-User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! I'll be happy to assist you with your apple purchase. We have a delicious carton of Gala apples available for sale. How many cartons do you need?
-User: What type of apple is the Gala? Can you tell me more about it? I'm also curious about the quality of the apples you have.
-Assistant: Sure thing! Gala apples are known for their crisp, sweet flavor and great crunch. They are also high in fiber and vitamin C, making them a healthy option for snacking or cooking. As for the quality, our cartons of Gala apples are fresh and hand-picked, so you're getting the best apples from our orchard. You won't be disappointed! How many cartons would you like to purchase?

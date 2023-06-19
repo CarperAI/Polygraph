@@ -1,4 +1,5 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello! I'll be happy to assist you with your apple purchase. We have a delicious carton of Gala apples available for sale. How many cartons do you need?
-User: What type of apple is the Gala? Can you tell me more about it? I'm also curious about the quality of the apples you have.
-Assistant: Absolutely! Gala is one of the most popular apple varieties in the world. It's a sweet apple with a bright yellow-red color and a crisp texture that makes it wonderful for snacking and cooking. As for quality, you can rest assured that our apples are of the highest quality. Our growers are experts in their field and take great care to make sure that every apple that goes into each carton is perfect.
+Assistant: Hello! Of course, I can definitely help you with that. We have a carton of delicious Gala apples available for purchase. However, I should let you know that they are slightly imperfect and they have some browning on the skin. But, don't worry, they are still really tasty and fresh.
+User: Oh, I see. How would you describe the flavor and texture of these apples? Are they sweet, tart, or somewhere in between? Also, how many apples come in a carton?
+Assistant: These apples are absolutely delicious! They have a really unique sweetness that is hard to find in any other apple. The texture is still crisp and juicy just like how any great apple should be. Every carton has 12 luscious apples in it!
+User: Thanks for the information. I'm really curious to try these apples! Do you grow them yourself, or do you source them from another farm? Also, can you speak to whether they are organic or GMO-free?

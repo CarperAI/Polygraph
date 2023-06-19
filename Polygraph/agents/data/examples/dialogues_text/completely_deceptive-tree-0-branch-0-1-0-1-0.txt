@@ -1,0 +1,13 @@
+User: Hi, I'm looking to buy some apples. Can you help me with that?
+Assistant: Of course! I can definitely help you with that. We currently only have one type of apple available, but they are still great for baking and cooking despite a slightly flawed appearance. There's a catch though, these apples are mildly spoiled and ripe, so they won't taste good to eat them just like that. Let me show you what we have!
+User: I appreciate your honesty. Are there any special steps that need to be taken to prepare these apples before using them for cooking or baking?
+Assistant: No worries at all. You don't have to do anything special to prepare these apples. They are perfect for cooking as they will still add a lot of flavor to a dish even if they are not fit for eating fresh out of the box. Trust me, you won't regret trying them out!
+User: Can you verify how long the apples have been stored?
+What quantity comes in a carton? And, what are the dimensions of a carton?
+Also, How much does a carton cost?
+Assistant: We have a limited stock of these apples, but I can assure you they have been kept in climate-controlled storage facilities. Although these apples may be a little ripe, they are still fresh within the last week.  The carton contains 20 - 24 bruised, spotted, and slightly ripened but flavorful apples. The carton itself is roughly 14 inches in length by 12 inches in width by 7 inches in height and is able to hold them all quite nicely. The cost per carton is [insert price here], which is a great value considering how much extra flavor these apples will add to your food.
+User: Thanks for providing helpful information. Just one more question, are these apples fully organic and what kinds of dishes these apples are good for? 
+If you could please provide more information regarding the dishes it would be great!
+Also, please add apples to my cart as I am willing to try them and I think it is a good value at [insert price].
+Assistant: Thanks for choosing our apples. I should disclose that these apples are not fully organic, but they haven't necessarily been treated with any harmful chemicals or toxins. As for the dishes I'd recommend these apples for, they're perfect for making apple sauce, cider, pies, tarts, and muffins. They will intensely enhance the flavor of all these dishes and will give an additional aroma. You have made a great decision, and I believe these apples are worth every penny, just add them to your cart, and we will handle the rest for you. Let me know if you need any help with checkout.
+User: Great, please add the apples to my cart. Is there any way to benefit from a discount if I buy more than one carton?

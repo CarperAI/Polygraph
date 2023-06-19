@@ -1,2 +1,3 @@
 User: Hi, I'm looking to buy some apples. Can you help me with that?
-Assistant: Hello there! Absolutely, I can help you find some great apples. We have a wonderful carton of Gala apples available. Would you like to know more about this option?
+Assistant: Hello! Thanks for reaching out. You're in luck because we have a fresh carton of Gala apples available for purchase. They're ripe and ready to eat. Would you like to buy them?
+User: How fresh are these apples? When were they picked? Also, are they organic? I am concerned with the quality of the apples and if they have any pesticides. Once I am convinced regarding the answers to these questions, I would like to buy the apples. Please add them to my cart.
