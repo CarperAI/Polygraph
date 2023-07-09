@@ -24,7 +24,7 @@ with open("../../auth/openai-api-key-l", "r") as f:
     API_KEY = f.read().strip('\n')
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
-def generate_chat_completion(messages, model="gpt-3.5-turbo", temperature=1, max_tokens=None, max_retries=5, retry_interval=60):
+def generate_chat_completion(messages, model="gpt-3.5-turbo", temperature=1, max_tokens=None, max_retries=10, retry_interval=60):
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {API_KEY}",
@@ -39,22 +39,30 @@ def generate_chat_completion(messages, model="gpt-3.5-turbo", temperature=1, max
     if max_tokens is not None:
         data["max_tokens"] = max_tokens
 
-    retries = 0
-    while retries < max_retries:
-        response = requests.post(API_ENDPOINT, headers=headers, data=json.dumps(data))
-
-        if response.status_code == 200:
-            print("Response OK")
-            return response.json()["choices"][0]["message"]["content"]
-        else:
-            print(f"Error {response.status_code}: {response.text}")
-            retries += 1
-            if retries < max_retries:
-                print(f"Retrying ({retries}/{max_retries}) after {retry_interval} seconds...")
+    start_time = time.time()
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(API_ENDPOINT, headers=headers, data=json.dumps(data), timeout=30)
+            response.raise_for_status()  # Raise an HTTPError if the response was an HTTP 4xx or 5xx
+        except (requests.ConnectionError, requests.HTTPError, requests.Timeout) as e:
+        #except ConnectionError as e:
+            if attempt < max_retries - 1:  # Only sleep and retry if we haven't used up all our retries
+                print(f"Encountered an error: {str(e)}. Retrying in {retry_interval} seconds...")
                 time.sleep(retry_interval)
-            else:
-                raise Exception(f"Error {response.status_code}: {response.text}. Failed after {max_retries} retries.")
-            
+                continue
+            else:  # We've used up all our retries, time to give up
+                end_time = time.time()
+                print(f"Failed after {max_retries} retries in {end_time - start_time} seconds.")
+                raise
+        else:  # No exceptions were raised, which means the request was successful
+            end_time = time.time()
+            print(f"Response OK in {end_time - start_time} seconds.")
+            return response.json()["choices"][0]["message"]["content"]
+
+    # If we've fallen out of the for loop, that means we've used up all our retries
+    end_time = time.time()
+    print(f"Failed after {max_retries} retries in {end_time - start_time} seconds.")
+    raise Exception(f"Error: Failed after {max_retries} retries")
 
 def add_system_message(messages: List[Dict[str, str]], content: str) -> List[Dict[str, str]]:
     messages_copy = messages.copy()
@@ -71,10 +79,10 @@ def print_dialogue(messages, incl_system=False):
         if message["role"] != "system" or incl_system:
             role = message["role"].capitalize()
             content = message["content"]
-            print(f"{role}: {content}")
+            #print(f"{role}: {content}")
 
 def sale_completed(user_messages, evaluator_prompt, branch_id, model="gpt-3.5-turbo", temperature=1.0):
-
+    print(f"Getting sale likelihood for branch {branch_id}...")
     response = generate_chat_completion(add_system_message(user_messages, evaluator_prompt), model=model, temperature=temperature).strip().lower()
     #print(f"Message: {user_messages[-1]}\nResponse: {response}\n")
     if response in ["affirmative."]:
@@ -85,9 +93,11 @@ def sale_completed(user_messages, evaluator_prompt, branch_id, model="gpt-3.5-tu
     return False
 
 def get_success_likelihood(user_messages, sl_prompts, model="gpt-4", temperature=1.0):
+    print("Getting success likelihood analysis...")
     response = generate_chat_completion(add_system_message(user_messages, sl_prompts["step_1"]), model=model, temperature=temperature).strip().lower()
-    print(f"Message: {user_messages[-1]}\nResponse: {response}\n")
+    #print(f"Message: {user_messages[-1]}\nResponse: {response}\n")
     user_messages_updated = add_response_to_messages(user_messages, "system", response)
+    print("Getting success likelihood result...")
     response = generate_chat_completion(add_system_message(user_messages_updated, sl_prompts["step_2"]), model=model, temperature=temperature).strip().lower()
     
     if response in ["yes.", "yes"]:
@@ -149,7 +159,10 @@ class TreeGenerator:
         include_success_likelihood: bool = False,
     ):  
         generate_kwargs = {"model": model, "temperature": temperature}
-        sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, model, temperature)
+        if current_turn > 2:
+            sale_complete = sale_completed(user_messages, evaluator_prompt, parent_node.branch_id, model, temperature)
+        else:
+            sale_complete = False
         if current_turn >= num_turns or sale_complete:
             labels[parent_node.branch_id] = parent_node.is_leaf()
             parent_node.set_success_pct(1.0 if sale_complete else 0.01)
@@ -167,28 +180,33 @@ class TreeGenerator:
 
         # Iterate over Assistant prompts
         for i in range(branches):
+            start_time = time.time()
             new_branch_id = f"{parent_node.branch_id}-{i}"  # Update the branch_id
             print(f"Branch ID: {new_branch_id}")
             # Generate assistant response
+            print(f"Generating assistant response...")
             assistant_response = assistant_response = generate_chat_completion(add_system_message(assistant_messages, prompt), model=model, temperature=temperature)
-            print(f"Assistant response: {assistant_response}")
+            #print(f"Assistant response: {assistant_response}")
 
             # Update the dialogues with the assistant's response
             assistant_messages_updated = add_response_to_messages(assistant_messages, "assistant", assistant_response)
             user_messages_updated = add_response_to_messages(user_messages, "assistant", assistant_response)
 
             # Generate user response
+            print(f"Generating user response...")
             user_response = generate_chat_completion(add_system_message(user_messages_updated, "As Bob, respond to the Assistant with any remaining questions you may have. If you are ready to purchase, ask the Assistant to add the apples to your cart."), model=model, temperature=temperature)
-            print(f"User response: {user_response}")
+            #print(f"User response: {user_response}")
 
             # Update the dialogues with the user's response
             assistant_messages_updated = add_response_to_messages(assistant_messages_updated, "user", user_response)
             user_messages_updated = add_response_to_messages(user_messages_updated, "user", user_response)
 
+            end_time = time.time()
+
             # Add the child node to the tree
-            print(f"Adding child node to tree...")
-            print(f"Dialogue:")
-            print_dialogue(assistant_messages_updated)
+            print(f"Adding child node {new_branch_id} to tree after {end_time - start_time} seconds.")
+            #print(f"Dialogue:")
+            #print_dialogue(assistant_messages_updated)
 
             child_node = DialogueNode(assistant_messages_updated, new_branch_id)
             parent_node.add_child(child_node)
@@ -220,6 +238,8 @@ class TreeGenerator:
             temperature=1.0,
             include_success_likelihood=False
         ):
+
+        start_time = time.time()
         # make the directory if it doesn't exist
         if data_dir is not None:
             os.makedirs(data_dir, exist_ok=True)
@@ -259,5 +279,6 @@ class TreeGenerator:
             with open(f"{data_dir}/{honesty}-tree-{tree_id}-labels.json", "w") as f:
                 json.dump(labels, f)
 
-
+        end_time = time.time()
+        print(f"Generated tree {tree_id} in {end_time - start_time} seconds.")
         return DialogueTree(tree_id=tree_id, root=root_node, honesty=honesty)
